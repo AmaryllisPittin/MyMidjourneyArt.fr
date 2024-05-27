@@ -1,0 +1,125 @@
+* {
+    color:white;
+    font-family: "Roboto", sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-image: linear-gradient(to right, #FFD6FF 0%, #E7C6FF 20%, #C8B6FF 40%, #B8C0FF 60%, #BBD0FF 80%);
+}
+
+.navbar {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+    height:100px;
+    position:fixed;
+    z-index:1000;
+    background-image: linear-gradient(to right, #FFD6FF 0%, #E7C6FF 20%, #C8B6FF 40%, #B8C0FF 60%, #BBD0FF 80%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    &__h1 {
+        margin-left:125px;
+    }
+}
+
+.navbar-link {
+    text-decoration:none;
+    width: 150px;
+    display:inline-block;
+}
+
+.last-link {
+    margin-right:70px;
+}
+
+.header {
+    display:flex;
+    padding-top:100px;
+}
+
+.presentation {
+    position:relative;
+    top: 150px;
+    left: 7%;
+    width: 45%;
+    height: 500px;
+    background-color:#B8C0FF;
+    z-index:2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    &__h1,
+    &__p {
+        width:650px;
+    }
+}
+
+.presentation-image {
+    position:relative;
+    width: 46%;
+    height: 800px;
+    left:2%;
+    z-index:1;
+}
+
+.presentation-image img {
+    width:100%;
+    height:100%;
+}
+
+.about {
+    background-color: #C8B6FF;
+    width:100%;
+    margin-top:100px;
+    height:900px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    z-index:2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    &__h1,
+    &__p {
+        max-width:60%;
+        text-align: justify;
+    }
+    &__h1 {
+        margin-bottom:100px;
+    }
+}
+
+.portfolio-access {
+    width:100%;
+    padding-top:100px;
+    height:900px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #C8B6FF;
+    width:100%;
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    z-index:2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button {
+    width: 200px;
+    height:40px;
+    border-radius:50px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border:none;
+}
