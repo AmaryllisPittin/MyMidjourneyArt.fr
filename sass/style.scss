@@ -5,6 +5,12 @@
     padding:0;
 }
 
+a,
+button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 body {
     background-image: linear-gradient(to right, #FFD6FF 0%, #E7C6FF 20%, #C8B6FF 40%, #B8C0FF 60%, #BBD0FF 80%);
 }
@@ -122,4 +128,101 @@ button {
     background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border:none;
+}
+
+.portfolio-body {
+    background-color: #C8B6FF;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:1200px;
+    padding-top:250px;
+    &__h1 {
+        margin-bottom:30px;
+    }
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:2600px;
+    padding-top:250px;
+    &__h1 {
+        margin-bottom:30px;
+    }
+}
+
+.cards-container {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 100%;
+}
+
+.article,
+.image {
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.article,
+.img,
+.image {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.image {
+    border-radius:0;
+    height:500px;
+}
+
+.article h2 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 210px;
+    left: 25px;
+}
+
+.article img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 20px;
+    filter: brightness(0.7);
+    transition: filter 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.article:hover img {
+    filter: brightness(1);
+    transform: scale(1.1);
 }
